@@ -1,6 +1,7 @@
 import React from "react";
 import './BookCard.css'
 import { toast } from "react-toastify";
+import { motion } from "framer-motion";
 
 const BookCard = ({ book }) => {
   const addToBookshelf = (book) => {
@@ -33,12 +34,13 @@ const BookCard = ({ book }) => {
           {book.publish_year ? book.publish_year.join(", ") : "Unknown"}
         </p>
         <center>
-          <button
+          <motion.button
+          whileTap={{scale:1.1}}
             onClick={() => addToBookshelf(book)}
             className="btn btn-primary"
           >
             Add to Bookshelf
-          </button>
+          </motion.button>
         </center>
       </div>
     </div>

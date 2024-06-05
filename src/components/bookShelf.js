@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Swal from "sweetalert2";
 import "./BookshelfPage.css";
+import { motion } from "framer-motion";
 
 const BookshelfPage = () => {
   const [bookshelf, setBookshelf] = useState(
@@ -44,7 +45,7 @@ const BookshelfPage = () => {
                 Publish Year:{" "}
                 {book.publish_year ? book.publish_year.join(", ") : "Unknown"}
               </p>
-              <button onClick={() => handleDelete(book.key)}>Delete</button>
+              <motion.button whileTap={{scale:1.1}} onClick={() => handleDelete(book.key)}>Delete</motion.button>
             </div>
           ))}
         </div>

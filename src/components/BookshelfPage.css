@@ -5,8 +5,6 @@
   align-items: center;
 }
 
-
-
 .bookshelf {
   display: flex;
   flex-wrap: wrap;
@@ -52,4 +50,21 @@
 
 .bookCard button:hover {
   background-color: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mainContainer {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .bookCard {
+    width: calc(50% - 1rem); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .bookCard {
+    width: 100%; /* Full width on extra small screens */
+  }
 }

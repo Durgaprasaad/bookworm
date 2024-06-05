@@ -5,7 +5,7 @@
   align-items: center;
   height: 50px;
   padding: 1rem;
-  background-color: rgb(240,240,240);
+  background-color: rgb(240, 240, 240);
   color: black;
 }
 
@@ -13,6 +13,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bookshelf-container {
@@ -23,8 +24,8 @@
 }
 
 .logo {
-    /* position: relative; */
-  margin-left: -150px ;
+  margin-left: -150px;
+  
 }
 
 .bookshelf-title {
@@ -35,4 +36,34 @@
 
 .bookshelf-image {
   height: 50px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 0;
+    
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    flex-direction: column; 
+    height: auto; 
+  }
+
+  .logo-container,
+  .bookshelf-container {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .bookshelf-container {
+    order: -1;
+  }
+
+  .logo {
+    margin-left: 0; 
+    margin-bottom: 10px; 
+  }
 }
