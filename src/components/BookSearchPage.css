@@ -1,0 +1,23 @@
+input{
+    margin-top: 40px;
+    margin-left: 45vw;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+#same{
+     margin-top: 55px;
+     position: absolute;
+    margin-left: 43vw;
+    /* size: 200px; */
+    font-size: 20px;
+}
+
+
+.mainDivvv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  max-width: 1200px; /* Adjust as needed */
+}
